@@ -150,7 +150,7 @@ end
 
 function SuckAndEquiop(NumberOfItems)
     robot.select(1)--start slot
-    for i=1,math.ceil((NumberOfItems/64))--for if number of crop stick is more than 64
+    for i=1,math.ceil((NumberOfItems/64)) do--for if number of crop stick is more than 64
         robot.suckDown(NumberOfItems)--number of Items to take
     end
     component.inventory_controller.equip()--equip 
